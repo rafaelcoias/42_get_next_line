@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rade-sar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 19:18:14 by rade-sar          #+#    #+#             */
-/*   Updated: 2021/11/17 20:32:09 by rade-sar         ###   ########.fr       */
+/*   Created: 2021/11/17 20:35:24 by rade-sar          #+#    #+#             */
+/*   Updated: 2021/11/17 20:39:27 by rade-sar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
 
-# define OPEN_MAX 256
+# ifndef OPEN_MAX
+#  define OPEN_MAX 256
+# endif
 
 # include <unistd.h>
 # include <stdio.h>

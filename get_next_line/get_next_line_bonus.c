@@ -6,7 +6,7 @@
 /*   By: rade-sar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 19:16:31 by rade-sar          #+#    #+#             */
-/*   Updated: 2021/11/17 20:32:25 by rade-sar         ###   ########.fr       */
+/*   Updated: 2021/11/17 20:46:52 by rade-sar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,28 +71,23 @@ char	*ft_strchr(char *str, char c)
 char	*get_next_line(int fd)
 {
 	static char	*save[OPEN_MAX];
-	char		*line;
+	char		line[BUFFER_SIZE + 1];
 	char		*nl;
 	char		*temp;
 	int			res;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	line = malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	res = BUFFER_SIZE;
 	while (!ft_strchr(save[fd], '\n') && res != 0)
 	{
 		res = read(fd, line, BUFFER_SIZE);
 		if (res < 0)
-		{
-			free(line);
 			return (NULL);
-		}
-		line[res] = '\0';	
+		line[res] = '\0';
 		temp = ft_strcat(save[fd], line);
 		save[fd] = temp;
 	}
-	free(line);
 	nl = ft_find_nl(save[fd]);
 	save[fd] = ft_new_save(save[fd]);
 	return (nl);
