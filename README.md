@@ -9,7 +9,7 @@ read from a file descriptor.
 Make you learn a highly interesting new concept in C programming: static
 variables.
 
-<h3>What do you need to search before doing get_next_line</h3>
+<h3>What you need to know before starting get_next_line</h3>
 <h4>Static Veriables</h4>
 If you have never heard of static variables you have to study about it. 
 
@@ -19,11 +19,15 @@ It has two main features :
 
 -  Static variables do not required to be initialized. They are automatically initialized to NULL.
 
+Learn more here : <a href="https://en.wikipedia.org/wiki/Static_variable">static variables Wikipedia</a> and <a href="https://www.geeksforgeeks.org/static-variables-in-c/">static variables Geeks4Geeks</a>
+
 <h4>Read function</h4>
 
 Read() - read from a file descriptor <br>
 The function read() attempts to read up to <i>count</i> bytes from file descriptor <i>fd</i> into the buffer starting at <i>buf</i>. <br>
 read(int <b>fd</b>, void <b>*buf</b>, size_t <b>count</b>); <br>
+
+Learn more here : <a href="https://man7.org/linux/man-pages/man2/read.2.html">man read</a>
 
 <h4>Malloc and Free</h4>
 
@@ -38,6 +42,8 @@ Long story short, free() is used to free the memory space pointed by the pointer
        to the allocated memory.  The memory is not initialized.  If size
        is 0, then malloc() returns either NULL, or a unique pointer
        value that can later be successfully passed to free().
+
+Learn more here : <a href="https://man7.org/linux/man-pages/man3/free.3.html">man malloc</a>
 
 <hr>
 I hope you found it interesting! <br>
