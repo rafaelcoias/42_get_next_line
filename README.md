@@ -10,7 +10,7 @@ Make you learn a highly interesting new concept in C programming: static
 variables.
 
 <h3>What you need to know before starting get_next_line</h3>
-<h4>Static Veriables</h4>
+<h4>Static variables</h4>
 If you have never heard of static variables you have to study about it. 
 
 It has two main features :
