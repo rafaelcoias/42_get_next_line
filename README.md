@@ -45,6 +45,12 @@ Long story short, free() is used to free the memory space pointed by the pointer
 
 Learn more here : <a href="https://man7.org/linux/man-pages/man3/free.3.html">man malloc</a>
 
+<details><summary>My grade</summary>
+  
+  ![image](https://user-images.githubusercontent.com/91686183/169927885-cde008e0-5854-44ff-b2b6-00aeace4e4d7.png)
+  
+</details>
+
 <hr>
 I hope you found it interesting! <br>
 And if you are going to do get_next_line, I wish you good luck and hope that you learned something here!
