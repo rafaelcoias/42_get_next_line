@@ -4,6 +4,13 @@
 This project is about programming a function that returns a line
 read from a file descriptor.
 
+### Skills Learned
+
+       -      Rigor
+       -      Unix
+       -      Algorithms & AI
+       -      Static variables
+
 <h3>Goal</h3>
 
 Make you learn a highly interesting new concept in C programming: static
