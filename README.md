@@ -6,10 +6,10 @@ read from a file descriptor.
 
 ### Skills Learned
 
-       -      Rigor
-       -      Unix
-       -      Algorithms & AI
-       -      Static variables
+ - Rigor
+ - Unix
+ - Algorithms & AI
+ - Static variables
 
 <h3>Goal</h3>
 
